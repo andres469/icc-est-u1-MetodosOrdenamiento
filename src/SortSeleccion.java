@@ -51,5 +51,13 @@ public class SortSeleccion {
             }
         }
     }
-    
+    public void printPersonArray(Persona[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i].getNombre() + ":" + arr[i].getEdad());
+            if (i < arr.length - 1) {
+                System.out.print(",");
+            }
+        }
+        System.out.println();
+    }
 }
